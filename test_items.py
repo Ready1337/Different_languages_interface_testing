@@ -10,6 +10,6 @@ def test_page_has_button_add_to_basket(browser):
     browser.get(link)
 
     button = WebDriverWait(browser, 10).until(EC.visibility_of_element_located(
-        (By.CSS_SELECTOR, '[class="btn btn-lg btn-primary btn-add-to-basket"]')))
+        (By.CSS_SELECTOR, '.btn-add-to-basket')))
 
     assert button != []
